@@ -41,3 +41,22 @@ void Vector::push(int item){
 
 }
 
+void Vector::insert(int index, int item){
+    if(index < 0 || index > size){
+        throw std::out_of_range("Index out of Bounds");
+    }
+
+    if(size == capacity){
+        //resizing
+    }
+
+    for (int i = size; i > index; i--){
+        *(data + i) = *(data + i -1);
+    }
+
+    *(data + index) = item;
+
+    size++;
+
+}
+

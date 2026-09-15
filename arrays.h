@@ -19,4 +19,6 @@ public:
 
     void push(int item);
 
+    void insert(int index, int item);
+
 };
