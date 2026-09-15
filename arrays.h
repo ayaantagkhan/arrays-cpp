@@ -15,4 +15,8 @@ public:
 
     bool isEmpty();
 
+    int at(int index);
+
+    void push(int item);
+
 };

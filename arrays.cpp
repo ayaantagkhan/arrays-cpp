@@ -1,4 +1,5 @@
 #include "arrays.h"
+#include <stdexcept>
 
 Vector::Vector() {
     capacity = 16;
@@ -18,3 +19,25 @@ int Vector::getCapacity() {
 bool Vector::isEmpty() {
     return size == 0;
 }
+
+int Vector::at(int index){
+
+    if(index< 0 || index >= size){ 
+        throw std::out_of_range("Index out of bounds");
+    }
+
+    return*(data+index);
+}
+
+void Vector::push(int item){
+
+    if(size == capacity){
+
+    }
+
+    *(data+size) = item;
+
+    size++;
+
+}
+
