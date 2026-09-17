@@ -6,6 +6,8 @@ private:
     int size;
     int capacity;
 
+    void resize(int newCapacity);
+    
 public:
     Vector();
 
@@ -20,5 +22,15 @@ public:
     void push(int item);
 
     void insert(int index, int item);
+
+    void prepend(int item);
+
+    int pop();
+
+    void removeAt(int index);
+
+    void remove(int item);
+
+    int find(int item);
 
 };

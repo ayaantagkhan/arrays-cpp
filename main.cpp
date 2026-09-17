@@ -8,6 +8,9 @@ int main() {
     vector.push(10);
     vector.push(20);
     vector.push(30);
+
+    vector.removeAt(1);
+
     std::cout << "Array Practice" << std::endl;
     std::cout << "Size: " << vector.getSize() << std::endl;
     std::cout << "Size: " << vector.getCapacity() << std::endl;
@@ -21,6 +24,7 @@ int main() {
     std::cout << "Index 2: " << vector.at(2) << std::endl;
     std::cout << "Size: " << vector.getSize() << std::endl;
     return 0;
+
 
     
 }
